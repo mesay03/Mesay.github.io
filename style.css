@@ -1,0 +1,314 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: black;
+}
+
+.mesay {
+  padding-left: 20px;
+}
+
+.mesay span {
+  font-size: 30px;
+  color: rgb(38, 141, 251);
+}
+
+/* Menu */
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Navigation Links */
+.Navbar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-right: 20px;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.Navbar a:hover,
+.Navbar a:active {
+  background-color: rgb(38, 141, 251);
+}
+
+/* Intro Section */
+.intro {
+  padding-top: 200px;
+  padding-left: 90px;
+  max-width: 600px;
+}
+
+.text1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.text2 {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 250px;
+}
+
+/* Profile Image */
+.pimg {
+  max-width: 700px;
+  max-height: 700px;
+  margin-left: 800px;
+  margin-top: -550px;
+  margin-bottom: -200px;
+}
+
+.ppimg {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* About Section */
+.abou {
+  padding-top: 180px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about {
+  font-size: 40px;
+  color: rgb(38, 141, 251);
+  text-align: center;
+}
+
+.aboutext {
+  padding: 40px;
+  max-width: fit-content;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Services */
+.services {
+  text-align: center;
+  color: rgb(38, 141, 251);
+  padding-top: 50px;
+  font-size: 45px;
+  margin-bottom: 100px;
+  margin-top: 80px;
+}
+
+.frontend,
+.backend {
+  display: block;
+  font-size: 20px;
+  max-width: 450px;
+  background-color: transparent;
+  border: 2px solid rgb(38, 141, 251);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.frontend {
+  margin-left: 220px;
+  height: 300px;
+}
+
+.front,
+.back {
+  padding-left: 10px;
+  font-size: 35px;
+}
+.back{
+  margin-bottom: 0px;
+  margin-top: 17px;
+}
+.list{
+  margin-top: 4px;
+}
+
+.backend {
+  margin-left: 820px;
+  margin-top: -300px;
+  height: 300px;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 50px 40px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  color: rgb(38, 141, 251);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.contact-item img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Footer */
+footer a {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer a:hover {
+  color: rgb(38, 141, 251);
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+}
+
+.socials {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+  
+  @media (max-width: 800px) {
+
+  .menu-icon {
+    display: block;
+  }
+
+  .Navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color:transparent;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    
+  }
+
+  .menu-toggle:checked ~ .Navbar {
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  
+
+  .Navbar a {
+    display: block;
+    padding: 8px 0;
+    margin: 4px 0;
+    width: 100%;
+  }
+
+  .intro {
+    padding: 140px 20px 0;
+  }
+
+
+  .about {
+    padding-left: 0;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+    .intro, .aboutext, .frontend, .backend {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .backend {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-section {
+    padding: 60px 20px;
+  }
+
+  .socials {
+    margin-left: auto;
+    margin-right: auto;
+    gap: auto;
+    flex-direction: column;
+  }
+
+  footer {
+    gap: auto;
+    text-align: center;
+  }
+
+  }
